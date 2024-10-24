@@ -5,9 +5,11 @@ from .models import UserProfile
 import base64
 
 class UserProfileSerializer(serializers.ModelSerializer):
+    first_name = serializers.CharField(source='user.first_name', read_only=True)
+    email = serializers.EmailField(source='user.email', read_only=True)
     class Meta:
         model = UserProfile
-        fields = ('id', 'days_without_drinking', 'picture')
+        fields = ('id', 'email','first_name', 'days_without_drinking', 'picture')
 
 class UserSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)

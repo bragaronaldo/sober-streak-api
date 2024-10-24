@@ -7,11 +7,9 @@ from user_data.models import UserProfile
 from user_data.serializers import UserProfileSerializer 
 from django.utils import timezone
 from django.contrib.auth.models import User 
-from django.views.decorators.csrf import csrf_exempt
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticated]) 
-@csrf_exempt 
 def get_user_profile(request):
     user = request.user 
     try:
