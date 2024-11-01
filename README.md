@@ -4,7 +4,7 @@ Este repositório contém a API desenvolvida em Django para o projeto **Sober St
 
 ## Descrição
 
-Sobriety Streak é um aplicativo desenvolvido em Ionic que oferece uma interface intuitiva e interativa, promovendo a motivação e o apoio mútuo entre os usuários.
+Sober Streak é um aplicativo desenvolvido em Ionic que oferece uma interface intuitiva e interativa, promovendo a motivação e o apoio mútuo entre os usuários.
 
 ## Funcionalidades da API
 
